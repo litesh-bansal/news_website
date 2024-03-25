@@ -74,9 +74,4 @@
         width: 100px;
     }
 }
-@media screen and (max-width: 636px)
-{
-    .sub-footer-container{
-        flex-wrap: wrap;
-    }
-}
+
