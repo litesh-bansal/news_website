@@ -1,0 +1,66 @@
+/* @media screen and(max-width:788px) 
+{
+    body{
+        background-color: red;
+    }
+} */
+@media screen and (789px <= width<=1118px)
+{
+    .card{
+        width: 48%;
+        row-gap: 20px;
+        
+    }
+}
+@media screen and (max-width: 788px) 
+{
+    .card
+    {
+        width: 100%;
+        row-gap: 30px;
+    }
+}
+@media screen and (max-width: 726px)
+{
+    
+    .main-nav{
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .nav-toggle{
+        display: block;
+        margin: 15px;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+    }
+    .nav-links.act{
+        left: 0;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .menu-bar
+    {
+        flex-direction: row-reverse;
+    }
+    .search-toggle{
+        display: block;
+    }
+    .search-bar{
+        position: absolute;
+        right: 200%;
+        transition: 0.4s ease-in-out;
+    }
+    .search-bar.srh{
+        right: 0;
+    }
+}
