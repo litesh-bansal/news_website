@@ -10,7 +10,7 @@ async function FetchNews(query)
 {
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
     bindData(data.articles);
 }
 
@@ -65,3 +65,23 @@ searchButton.addEventListener("click",()=>{
     currSelectedNav?.classList.remove("active");
     currSelectedNav = null;
 })
+
+const NavToggle = document.getElementById('nav-toggle');
+const navlink = document.getElementById('nav-links');
+NavToggle.addEventListener('click',(event)=>{
+    event.preventDefault();
+    navlink.classList.toggle('act');
+})
+
+const searchButt = document.getElementById('search-button');
+const searchBar = document.getElementById('search-bar');
+const searchToggle = document.getElementById('search-toggle');
+searchToggle.addEventListener('click',(event)=>{
+    event.preventDefault();
+    searchBar.classList.toggle('srh');
+});
+
+searchButt.addEventListener('click',(event)=>{
+    event.preventDefault();
+    searchBar.classList.remove('srh');
+});
