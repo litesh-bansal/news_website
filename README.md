@@ -1,1 +1,1 @@
-Run only on local machine.
+Download source code and Run on local machine.
