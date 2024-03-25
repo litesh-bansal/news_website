@@ -37,7 +37,7 @@ ul{
     margin-inline: auto;
 }
 nav{
-    background-color: #f3faff;
+    background-color: #f3faff; 
     box-shadow: 0 0 4px #bbd0e2;
     position:fixed;
     top: 0;
@@ -58,6 +58,9 @@ nav{
 }
 .nav-items.active{
     color: var(--accent-color);
+}
+.nav-toggle{
+    display: none;
 }
 .hover-link{
     cursor: pointer;
@@ -93,6 +96,9 @@ nav{
 }
 .search-button:hover{
     background-color: var(--accent-color-dark);
+}
+.search-toggle{
+    display: none;
 }
 main{
     padding: 20px;
