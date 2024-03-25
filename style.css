@@ -137,5 +137,16 @@ main{
 .news-source{
     margin-block: 12px;
 }
-
-
+.subfooter
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #b9cde4;
+    padding:var(--padding-inline-section);
+}
+.sub-footer-container
+{
+    justify-content: center;
+    gap: 30px;
+}
