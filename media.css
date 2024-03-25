@@ -54,6 +54,7 @@
     }
     .search-toggle{
         display: block;
+        margin-right: 15px;
     }
     .search-bar{
         position: absolute;
@@ -62,5 +63,14 @@
     }
     .search-bar.srh{
         right: 0;
+    }
+}
+@media screen and (max-width: 230px)
+{
+    .main-nav{
+        gap: 20px;
+    }
+    .news-input{
+        width: 100px;
     }
 }
